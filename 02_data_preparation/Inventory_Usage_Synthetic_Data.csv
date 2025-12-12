@@ -1,0 +1,11 @@
+Field Name,Description,Data Type,Example Value
+Report_ID,Unique identifier for the Processor Monthly Performance Report (MPR).,STRING,MPR_TDA_102025_001
+Entity_ID,Unique ID for the Contracting Entity (CE) or Processor.,INT,50012
+Entity_Type,Type of entity holding the inventory.,STRING,Processor / Contracting Entity
+Product_ID,Unique identifier for the USDA Food commodity.,STRING,US_CHICKEN_BR_BULK
+Product_Name,Description of the USDA Food commodity.,STRING,Bulk Chicken Breast
+Inventory_Date,Date the inventory count was taken (MPR submission month-end).,DATE,2025-10-31
+Current_Inventory_LBS,Total pounds of the product currently in inventory.,INT,15000
+Avg_Monthly_Usage_LBS,Rolling 6-month average usage (pounds) by the entity.,FLOAT,2000.5
+Best_By_Date,"The ""Best If Used By"" Date for the oldest lot in inventory.",DATE,2026-03-01
+Calculated_MOH,Months of Hold (MOH): Current_Inventory_LBS / Avg_Monthly_Usage_LBS. (The core metric.),FLOAT,7.5
